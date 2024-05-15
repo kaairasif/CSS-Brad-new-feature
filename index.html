@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS New Feature</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <h1>is() - CSS pseudo-class</h1>
+
+      <div class="example example-1">
+        <h2 class="1a">Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <a href="#">link</a>
+        <p id="para"></p>
+        <p>paragraph</p>
+      </div>
+      <a class="btn" href="https://caniuse.com/?search=is" target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 1 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>has() - CSS relational pseudo-class</h1>
+      <div class="example-2">
+        <aside class="info-card-wrapper">
+          <div class="info-card special-card">
+            <span class="special-ribbon">&nbsp;Offer</span>
+            <div class="info-card-body">
+              The functional :has() CSS pseudo-class represents an element if
+              any of the relative selectors that are passed as an argument match
+              at least one element when anchored against this element. This
+              pseudo-class presents a way of selecting a parent element or a
+              previous sibling element with respect to a reference element by
+              taking a relative selector list as an argument.
+            </div>
+            <br />
+            <br />
+            <label>
+              <input type="checkbox" class="dark-mode-toggle" /> Dark Mode
+            </label>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              The functional :has() CSS pseudo-class represents an element if
+              any of the relative selectors that are passed as an argument match
+              at least one element when anchored against this element. This
+              pseudo-class presents a way of selecting a parent element or a
+              previous sibling element with respect to a reference element by
+              taking a relative selector list as an argument.
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              The functional :has() CSS pseudo-class represents an element if
+              any of the relative selectors that are passed as an argument match
+              at least one element when anchored against this element.
+            </div>
+          </div>
+        </aside>
+
+        <form class="form-validation">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" required minlength="3" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" required id="email" />
+          </div>
+          <button>Submit</button>
+        </form>
+
+        <div class="image-gallery">
+          <img src="images/img-1.jpg" alt="" />
+          <img src="images/img-2.jpg" alt="" />
+          <img src="images/ai-chip.jpg" alt="" />
+          <img src="images/img-1.jpg" alt="" />
+          <img src="images/img-2.jpg" alt="" />
+          <img src="images/ai-chip.jpg" alt="" />
+          <img src="images/img-1.jpg" alt="" />
+          <img src="images/img-1.jpg" alt="" />
+          <img src="images/img-2.jpg" alt="" />
+          <img src="images/ai-chip.jpg" alt="" />
+          <img src="images/img-1.jpg" alt="" />
+          <img src="images/img-2.jpg" alt="" />
+          <img src="images/img-2.jpg" alt="" />
+          <img src="images/ai-chip.jpg" alt="" />
+          <img src="images/img-1.jpg" alt="" />
+        </div>
+      </div>
+      <a class="btn" href="https://caniuse.com/?search=has" target="_blank"
+        >Browser Support</a
+      >
+    </section>
+
+    <!-- example 2 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Aspect Ratio - CSS property</h1>
+      <div class="example-3"></div>
+      <a
+        class="btn"
+        href="https://caniuse.com/?search=Aspect%20Ratio"
+        target="_blank"
+        >Browser Support</a
+      >
+    </section>
+
+    <!-- example 3 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>First letter - CSS pseudo-element selector</h1>
+      <div class="example-4">
+        <p>
+          Knowledge sharing is important in the workplace because it enhances
+          the collective ability of an organization's workforce to understand
+          clients situations, perceptions, and expectations, so the business can
+          make client-centric decisions Why sharing is important. Children need
+          to learn to share so they can make and keep friends, play
+          cooperatively, take turns, negotiate and cope with disappointment.
+          Sharing teaches children about compromise and fairness. They learn
+          that if we give a little to others, we can get some of what we want
+          too. Knowledge sharing is important in the workplace because it
+          enhances the collective ability of an organization's workforce to
+          understand clients situations, perceptions, and expectations, so the
+          business can make client-centric decisions Why sharing is important.
+          Children need to learn to share so they can make and keep friends,
+          play cooperatively, take turns, negotiate and cope with
+          disappointment. Sharing teaches children about compromise and
+          fairness. They learn that if we give a little to others, we can get
+          some of what we want too.
+        </p>
+      </div>
+      <a
+        class="btn"
+        href="https://caniuse.com/?search=first-letter"
+        target="_blank"
+        >Browser Support</a
+      >
+    </section>
+
+    <!-- example 4 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Starting styles - CSS at-rule</h1>
+
+      <div class="example-5">
+        <button class="toggle-card">show card</button>
+        <p class="card">Lorem ipsum doller sit amet</p>
+      </div>
+      <a class="btn" href="https://caniuse.com/?search=Starting" target="_blank"
+        >Browser Support</a
+      >
+    </section>
+
+    <!-- example 5 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>nth of selector - CSS pseudo-classes</h1>
+
+      <div class="example-6">
+        <ul class="list">
+          <li class="special">Special Item</li>
+          <li>Normal Item</li>
+          <li>Normal Item</li>
+          <li class="special">Special Item</li>
+          <li>Normal Item</li>
+          <li class="special">Special Item</li>
+          <li>Normal Item</li>
+          <li>Normal Item</li>
+          <li class="special">Special Item</li>
+          <li>Normal Item</li>
+        </ul>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+            <tr>
+              <td>Montu</td>
+              <td>32</td>
+              <td><button class="hide">Hide</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a class="btn" href="https://caniuse.com/?search=nth%20of" target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 6 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Individual Transform Properties</h1>
+
+      <div class="example-7">
+        <div class="box box--scale box--translate box--rotate"></div>
+      </div>
+      <a class="btn" href="https://caniuse.com/?search=scale" target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 7 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Accent Color - CSS property</h1>
+
+      <div class="example-8">
+        <a href="https://codepen.io/kevinpowell/pen/gORbbWr" target="_blank"
+          >Example</a
+        >
+      </div>
+      <a
+        class="btn"
+        href="https://caniuse.com/?search=Accent%20Color"
+        target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 8 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>CSS Nesting</h1>
+
+      <div class="example-9">
+        <article class="article article--modifier">
+          <!-- <div class="article__item">item</div> -->
+          <h2>
+            Baseline 2023 :: Newly available across major
+            <strong>browsers</strong>
+          </h2>
+          <p>
+            CSS nesting provides the ability to nest one style rule inside
+            another, with the selector of the child rule relative to the
+            selector of the parent rule. Similar behavior previously required a
+            CSS pre-processor.
+          </p>
+          <a href="">Link</a>
+        </article>
+      </div>
+
+      <!-- <div class="example-9 article-wrapper">
+        <article class="article">
+          <h2>Baseline 2023 :: Newly available across major <strong>browsers</strong></h2>
+          <p>CSS nesting provides the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule. Similar behavior previously required a CSS pre-processor.</p>
+          <a href="">Link</a>
+        </article>
+      </div>
+      <div class="example-9">
+        <article class="article">
+          <h2>Baseline 2023 :: Newly available across major <strong>browsers</strong></h2>
+          <p>CSS nesting provides the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule. Similar behavior previously required a CSS pre-processor.</p>
+          <a href="">Link</a>
+        </article>
+      </div> -->
+
+      <a
+        class="btn"
+        href="https://caniuse.com/?search=css%20nesting"
+        target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 9 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Container Queries - Size</h1>
+      <div class="example-10">
+        <aside class="post-card-parent">
+          <aside class="post-card">
+            <h2>Container queries details</h2>
+            <p>
+              Container queries enable you to apply styles to an element based
+              on the size of the element's container. If, for example, a
+              container has less space available in the surrounding context, you
+              can hide certain elements or use smaller fonts.
+            </p>
+            <img src="images/ai-chip.jpg" alt="" />
+          </aside>
+        </aside>
+
+        <div class="stats">
+          <div class="stats__item stats__item--left">
+              <div class="stats__col">
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                 
+              </div>
+              <div class="stats__col">
+               
+                  <figure>
+                    <img src="images/img-1.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                
+              </div>
+              <div class="stats__col">
+                
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>                
+              </div>
+               <div class="stats__col">
+               
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                 
+              </div>
+                <!-- <div class="stats__col">
+                <h2>Sidebar Title</h2>
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                
+              </div>
+                <div class="stats__col">
+                <h2>Sidebar Title</h2>
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                 
+              </div>
+               <div class="stats__col">
+                <h2>Sidebar Title</h2>
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                
+              </div>
+               <div class="stats__col">
+                <h2>Sidebar Title</h2>
+                  <figure>
+                    <img src="images/img-2.jpg" alt="" />
+                  </figure>
+                  <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                 
+              </div> -->
+          </div>
+          <div class="stats__item stats__item--right">
+            <div class="stats-content">
+              <h2>Sidebar Title</h2>
+
+              <div class="stats-content__items">
+                <div class="stats-content__col">
+                    <figure>
+                      <img src="images/img-1.jpg" alt="" />
+                    </figure>
+                    <figure>
+                      <img src="images/img-2.jpg" alt="" />
+                    </figure>
+                     <figure>
+                      <img src="images/ai-chip.jpg" alt="" />
+                    </figure>
+                </div>
+                
+                <div class="stats-content__col">
+                <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                <p>Container queries enable you to apply styles to an element based on the size of the element's container. If, for example, a container has less space available in the surrounding context, you can hide certain elements or use smaller fonts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="btn"
+        href="https://caniuse.com/?search=%40container"
+        target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 10 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Scoped Styles: the @scope rule</h1>
+      <div class="example-11 wrapper">
+        <div class="secondary-title">Title</div>
+        <div class="area">
+          <div class="secondary-title">Title</div>
+          <div class="area">
+            <style>
+              @scope to  (.range) {
+                .secondary-title {
+                  color: red;
+                }
+              }
+            </style>
+            <div class="secondary-title">Title</div>
+            <aside class="product">
+              <h2>Product Name</h2>
+              <div class="secondary-title">Title</div>
+              <p>
+                Allows CSS rules to be scoped to part of the document, with
+                upper and lower limits described by selectors.
+              </p>
+              <div class="range">
+                <div class="secondary-title">Title</div>
+                <h2>Product Name 2</h2>
+                <p>
+                  Allows CSS rules to be scoped to part of the document, with
+                  upper and lower limits described by selectors.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <a class="btn" href="https://caniuse.com/?search=%40scope" target="_blank"
+        >Browser Support</a
+      >
+    </section>
+    <!-- example 11 end----------------------------------------------------------------------------- -->
+
+    <section class="section">
+      <h1>Min, Max and Fit content</h1>
+        <div class="example-12">
+            <h2 class="adjust-content">Now CSS are more Powerfull</h2>
+        </div>
+    </section>
+    <!-- example 12 end----------------------------------------------------------------------------- -->
+
+
+    <section class="section">
+      <h1>Column Count</h1>
+        <div class="example-12">
+           <a href="https://codepen.io/kevinpowell/pen/BYXdJx" target="_blank">Codepen Example</a>
+        </div>
+    </section>
+    <!-- example 13 end----------------------------------------------------------------------------- -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

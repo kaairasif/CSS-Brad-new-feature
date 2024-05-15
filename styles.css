@@ -1,0 +1,515 @@
+html,
+body {
+  padding: 0;
+  margin: 20px;
+}
+.section {
+  padding: 0;
+  border: 1px solid #ccc;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 5px 20px;
+  background: teal;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-inline: 20px;
+}
+.btn:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 50px;
+  padding: 10px;
+  background: rgb(235, 235, 235);
+  margin: 0 0 15px 0;
+}
+.example {
+  padding: 10px 40px;
+}
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --coral: coral;
+}
+
+/* .example-1 :is(h3, h4, a) {
+  color: var(--coral);
+} */
+/* .example-1 :is(h3, h4, a, .link, #para):hover {
+  color: var(--blue);
+} */
+
+.example-1 h3,
+.example-1 h4,
+.example-1 a {
+  color: red;
+}
+
+/* .example-1 h3:hover,
+.example-1 h4,
+.example-1 a {
+  color: green;
+} */
+
+/* a:is(:hover, :focus) {
+  color: firebrick;
+} */
+
+/* Benefits
+1. Reduce code with different states like hove, focus, active and so on.
+2. Error selector skip
+3. Managed speficity with higher one as prioritize function local scope
+
+*/
+
+/* Example 1 end
+========================================================================================================== */
+.info-card-wrapper {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+.info-card {
+  font-size: 18px;
+  width: 300px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 35px;
+  position: relative;
+  overflow: hidden;
+}
+.special-ribbon {
+  position: absolute;
+  background: purple;
+  color: #fff;
+  padding: 5px 28px;
+  top: 9px;
+  right: -27px;
+  transform: rotate(45deg);
+}
+.info-card.special-card {
+  border-color: purple;
+  box-shadow: 0 2px 10px 2px purple;
+}
+
+/* .info-card:has(.special-ribbon) {
+  border-color: purple;
+  box-shadow: 0 2px 10px 2px purple;
+} */
+/* body:has(.dark-mode-toggle:checked) .info-card:not(:has(.special-ribbon)) {
+  background: #333;
+  color: white;
+} */
+/* body:has(.dark-mode-toggle:checked) .section:has(.info-card-wrapper) {
+  background: #333;
+  border-color: purple;
+  .info-card-wrapper {
+    color: white;
+  }
+} */
+
+.form-validation {
+  margin: 0 20px;
+  > div {
+    margin-bottom: 15px;
+  }
+}
+label:has(+ input:valid) {
+  color: green;
+}
+label:has(+ input:valid)::before {
+  content: "\2713";
+  margin-right: 0.25rem;
+}
+label:has(+ input:invalid) {
+  color: red;
+}
+label:has(+ input:invalid)::before {
+  content: "\00d7";
+  margin-right: 0.25rem;
+}
+
+/* image gallery */
+.image-gallery {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.image-gallery > img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: scale 0.3s ease, opacity 0.3s linear;
+}
+
+.image-gallery:has(img:hover) img:not(:hover) {
+  scale: 0.8;
+  opacity: 0.9;
+}
+
+/* Example 2 end
+========================================================================================================== */
+
+.example-3 {
+  max-width: 1000px;
+  /* height: 700px; */
+  aspect-ratio: 16 / 9;
+  background: coral url("images/hands-hold-two.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* Example 3 end
+========================================================================================================== */
+
+.example-4 {
+  padding: 15px;
+  p::first-letter {
+    /* font-size: 100px; */
+    color: red;
+    initial-letter: 5 2;
+  }
+}
+/* Example 4 end
+========================================================================================================== */
+
+.example-5 {
+  padding: 15px;
+}
+.toggle-card {
+  padding: 10px;
+  font-size: 30px;
+}
+.card {
+  padding: 15px;
+  border: 2px solid firebrick;
+  font-size: 3rem;
+  max-width: 400px;
+  text-align: center;
+  display: none;
+  transition: opacity 1s;
+}
+
+.card.show {
+  @starting-style {
+    opacity: 0;
+  }
+  display: block;
+}
+
+/* Example 5 end
+========================================================================================================== */
+
+.example-6 {
+  padding: 15px;
+}
+.list {
+  font-size: 24px;
+}
+.special {
+  color: red;
+}
+.list :nth-child(5) {
+  text-decoration: line-through;
+}
+.list .special:nth-child(2) {
+  text-decoration: line-through;
+}
+/* .list :nth-child(2 of .special) {
+    text-decoration: line-through;
+} */
+
+.table {
+  border-collapse: collapse;
+  width: 500px;
+  text-align: center;
+}
+.table :is(th, td) {
+  border: 1px solid #747474;
+  padding: 15px 20px;
+}
+.table :is(tr):nth-child(even) {
+  background-color: #dedddd;
+}
+/* .table :is(tr):nth-child(even of :not(.hidden)) {
+    background-color: #dedddd;
+} */
+.table .hide {
+  cursor: pointer;
+  padding: 5px 20px;
+}
+.table .hidden {
+  display: none;
+}
+
+/* Example 6 end
+========================================================================================================== */
+.box {
+  max-width: 150px;
+  aspect-ratio: 3 / 2;
+  background: coral;
+  border: 1px solid #333;
+}
+.box--scale {
+  transform: scale(1.5);
+}
+.box--translate {
+  transform: translateX(100px);
+}
+.box--rotate {
+  transform: rotate(10deg);
+}
+
+/* Example 7 end
+========================================================================================================== */
+
+/* Example 8 end
+========================================================================================================== */
+
+/* Nesting */
+.article {
+  /* background: coral;
+  padding: 15px;
+  .article-wrapper & {
+    background: limegreen;
+    h2 {
+      font-size: 60px;
+    }
+  }
+  &.article--modifier {
+    background: rgb(130, 38, 19);
+  }
+  h2 {
+    color: white;
+    strong {
+      color: #000;
+    }
+  }
+  p {
+    font-size: 24px;
+  }
+  a {
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 24px;
+    position: relative;
+    color: #000;
+    &:after {
+      content: ">";
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  } */
+
+  /* media  */
+  /* @media (min-width: 800px) {
+    & {
+      background: teal;
+
+      h2 {
+        color: limegreen;
+      }
+    }
+  } */
+}
+
+/* Example 9 end
+========================================================================================================== */
+.post-card-parent {
+  border: 3px solid red;
+  aspect-ratio: 16 / 9;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #949494;
+  resize: horizontal;
+  overflow: auto;
+  container-type: inline-size;
+  container-name: card;
+}
+.post-card {
+  max-width: 700px;
+  background: #747474;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    /* font-size: 100px; */
+    font-size: clamp(50px, 10cqw, 100px);
+    margin: 0;
+    line-height: normal;
+  }
+  p {
+    font-size: 24px;
+  }
+  img {
+    width: clamp(200px, 30cqw, 400px);
+    /* height: 22cqw; */
+    /* aspect-ratio: 1 / 1; */
+  }
+  /* @container (max-width: 800px) {
+    .post-card {
+      background: firebrick;
+    }
+    .example-9 {
+      color: limegreen;
+    }
+  } */
+}
+
+@container card (max-width: 800px) {
+  .post-card {
+    background: firebrick;
+  }
+  .example-9 {
+    color: limegreen;
+  }
+}
+
+.stats {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  gap: 30px;
+  padding: 0 30px;
+  resize: horizontal;
+  overflow: auto;
+  container-type: inline-size;
+  container-name: statsleft;
+
+  figure {
+    display: block;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .stats__item--left {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border: 3px solid #000;
+    padding: 30px;
+  }
+  .stats__item--right {
+    padding: 0 30px;
+    background: coral;
+  }
+  .stats__col {
+    background: #ccc;
+    text-align: center;
+    padding: 15px;
+  }
+
+  /* Sidebar */
+  .stats-content__items {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@container statsleft (max-width: 1500px) {
+  .stats {
+    .stats__item--left {
+      background: rebeccapurple;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+  }
+}
+@container statsleft (max-width: 1200px) {
+  .stats {
+    .stats__item--left {
+      background: firebrick;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .stats-content__items {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@container statsleft (max-width: 900px) {
+  .stats {
+    .stats__item--left {
+      background: lightseagreen;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .stats-content__items {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+
+
+
+
+
+/* Example 10 end
+========================================================================================================== */
+.example-11 {
+  margin: 0 30px;
+}
+.secondary-title {
+  color: green;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* @scope (.area) to (.range) {
+  .secondary-title {
+    color: red;
+  }
+} */
+
+/* Example 11 end
+========================================================================================================== */
+
+
+.adjust-content {
+  font-size: clamp(20px, 6vw, 50px);
+  font-size: 60px;
+  padding: 10px;
+  color: #fff;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  /* width: min max fit content; */
+  width: fit-content;
+}
+/* Example 12 end
+========================================================================================================== */
+
+
+.columns {
+  column-count: 3;
+  column-width: 250px;
+  /* columns: 250px 3; */
+  column-rule: 1px dotted #ccc;
+  column-gap: 3em;
+}
+
+.intro {
+  column-span: all;
+}
+/* Example 13 end
+========================================================================================================== */
+

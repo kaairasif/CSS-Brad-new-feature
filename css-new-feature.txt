@@ -1,0 +1,53 @@
+https://positivethinking.tech/insights/the-10-new-css-features-in-2023/
+
+
+
+Functions {
+has()
+//is()
+}
+
+//nth of
+//first-letter
+//starting styles
+//scope
+//@container queries
+//var()
+//css nesting
+//individual transform properties
+//accent color
+//aspect ratio
+
+====================================================================
+Part 2
+====================================================================
+
+Office knowledge sharing session:
+
+CSS New Featrure:
+
+Part-2:
+==========================================
+Nesting
+Container Queries
+Scoped
+Clamp
+Text-wrap: balanced <-----
+Overflow clip <----
+Column (https://codepen.io/kevinpowell/pen/BYXdJx)
+min-content max-content fit-content
+subgrid <-----
+Advanced flexbox tricks (https://www.youtube.com/shorts/jlvwSorkdIo)
+
+
+============================
+Examples
+============================
+{
+https://cssday.nl/2024
+
+code --> https://codepen.io/kevinpowell/pen/eYoOwgv
+}
+
+
+
